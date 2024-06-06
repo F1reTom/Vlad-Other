@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="BodyPartUltimateBionicBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
+        <researchPrerequisites>UltimateBionic</researchPrerequisites>
+    </ThingDef>
+
+
+    
+    <HediffDef ParentName="addedPartAdvanced">
+        <defName>VOM_UltimateBionicLeg</defName>
+        <label>ultimate bionic leg</label>
+        <labelNoun>an ultimate bionic leg</labelNoun>
+        <description>An installed ultimate bionic leg.</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicLeg</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>VOM_UltimateBionicLeg</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartUltimateBionicBase">
+        <defName>VOM_UltimateBionicLeg</defName>
+        <label>ultimate bionic leg</label>
+        <description>The ultimate bionic leg. She is much better than her predecessors, she is beautiful, she is absolute</description>
+        <descriptionHyperlinks><RecipeDef>VOM_UltimateBionicLeg_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>VOM_UltimateBionicLeg_install</defName>
+        <label>install ultimate bionic leg</label>
+        <description>install an ultimate bionic leg</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicLeg</ThingDef></descriptionHyperlinks>
+        <jobString>installing ultimate bionic leg</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>VOM_UltimateBionicLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>VOM_UltimateBionicLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>VOM_UltimateBionicLeg</addsHediff>
+    </RecipeDef>
+
+<!--0000000000000000000000000000000000000000000000000000000000000000000000-->
+
+    <HediffDef ParentName="addedPartAdvanced">
+        <defName>VOM_UltimateBionicHand</defName>
+        <label>ultimate bionic hand</label>
+        <labelNoun>an ultimate bionic hand</labelNoun>
+        <description>An installed ultimate bionic hand.</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicHand</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>VOM_UltimateBionicHand</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartUltimateBionicBase">
+        <defName>VOM_UltimateBionicHand</defName>
+        <label>ultimate bionic hand</label>
+        <description>The ultimate bionic hand. She is much better than her predecessors, she is beautiful, she is absolute</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicHand</ThingDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>VOM_UltimateBionicHand_install</defName>
+        <label>install ultimate bionic hand</label>
+        <description>install an ultimate bionic hand</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicHand</ThingDef></descriptionHyperlinks>
+        <jobString>installing ultimate bionic hand</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>VOM_UltimateBionicHand</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>VOM_UltimateBionicHand</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Hand</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>VOM_UltimateBionicHand</addsHediff>
+    </RecipeDef>
+
+<!--0000000000000000000000000000000000000000000000000000000000000000000000-->
+
+    <HediffDef ParentName="addedPartAdvanced">
+        <defName>VOM_UltimateBionicHeart</defName>
+        <label>ultimate bionic heart</label>
+        <labelNoun>an ultimate bionic heart</labelNoun>
+        <description>An installed ultimate bionic Heart.</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicHeart</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>VOM_UltimateBionicHand</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartUltimateBionicBase">
+        <defName>VOM_UltimateBionicHeart</defName>
+        <label>ultimate bionic heart</label>
+        <description>The ultimate bionic heart. She is much better than her predecessors, she is beautiful, she is absolute</description>
+        <descriptionHyperlinks><RecipeDef>VOM_UltimateBionicHeart_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>80</Steel>
+			<Plasteel>45</Plasteel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<ComponentSpacer>9</ComponentSpacer>
+            <Hyperweave>20</Hyperweave>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>VOM_UltimateBionicHeart_install</defName>
+        <label>install ultimate bionic heart</label>
+        <description>install an ultimate bionic heart</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicHeart</ThingDef></descriptionHyperlinks>
+        <jobString>installing ultimate bionic heart</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>VOM_UltimateBionicHeart</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>VOM_UltimateBionicHeart</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>VOM_UltimateBionicHeart</addsHediff>
+    </RecipeDef>
+
+<!--0000000000000000000000000000000000000000000000000000000000000000000000-->
+
+    <HediffDef ParentName="addedPartAdvanced">
+        <defName>VOM_UltimateBionicLiver</defName>
+        <label>ultimate bionic liver</label>
+        <labelNoun>an ultimate bionic liver</labelNoun>
+        <description>An installed ultimate bionic Liver.</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicLiver</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>VOM_UltimateBionicHand</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartUltimateBionicBase">
+        <defName>VOM_UltimateBionicLiver</defName>
+        <label>ultimate bionic liver</label>
+        <description>The ultimate bionic liver. She is much better than her predecessors, she is beautiful, she is absolute</description>
+        <descriptionHyperlinks><RecipeDef>VOM_UltimateBionicLiver_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+            <Hyperweave>10</Hyperweave>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+        <defName>VOM_UltimateBionicLiver_install</defName>
+        <label>install ultimate bionic liver</label>
+        <description>install an ultimate bionic liver</description>
+        <descriptionHyperlinks><ThingDef>VOM_UltimateBionicLiver</ThingDef></descriptionHyperlinks>
+        <jobString>installing ultimate bionic liver</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>VOM_UltimateBionicLiver</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>VOM_UltimateBionicLiver</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>VOM_UltimateBionicLiver</addsHediff>
+    </RecipeDef>    
+</Defs>

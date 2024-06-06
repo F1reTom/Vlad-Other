@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ResearchTabDef>
+        <defName>VOM</defName>
+        <label>Protesis</label>
+    </ResearchTabDef>
+
+    <ResearchProjectDef>
+        <defName>UltimateBionic</defName>
+        <label>Ultimate Bionic</label>
+        <description>Unlock Ultimate Bionic</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>AdvancedFabrication</li>
+            <li></li>
+        </prerequisites>
+        <tab>VOM</tab>
+    </ResearchProjectDef>
+</Defs>

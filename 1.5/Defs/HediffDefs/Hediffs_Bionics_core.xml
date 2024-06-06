@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="BodyPartUltimateBionicBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
+        <researchPrerequisites>
+            <li>tech_UltimateBionic</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="BodyPartUltimateBionicOrganBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
+        <researchPrerequisites>
+            <li>tech_UltimateBionicOrgan</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="BodyPartUltimateBionicSpineBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
+        <researchPrerequisites>
+            <li>tech_UltimateBionicSpine</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="BodyPartUltimateBionicExoSuitBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
+        <researchPrerequisites>
+            <li>tech_UltimateBionicExoSuit</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+</Defs>

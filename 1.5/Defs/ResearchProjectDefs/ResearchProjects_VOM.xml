@@ -1,21 +1,63 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <ResearchTabDef>
         <defName>VOM</defName>
-        <label>Protesis</label>
+        <label>VLAD Protesis</label>
     </ResearchTabDef>
 
     <ResearchProjectDef>
-        <defName>UltimateBionic</defName>
+        <defName>tech_UltimateBionic</defName>
         <label>Ultimate Bionic</label>
         <description>Unlock Ultimate Bionic</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
-            <li>AdvancedFabrication</li>
-            <li></li>
+            <li>AdvancedBionics</li>
         </prerequisites>
         <tab>VOM</tab>
+        <researchViewX>1</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_UltimateBionicOrgan</defName>
+        <label>Ultimate Bionic Organ</label>
+        <description>Unlock Ultimate Bionic Organ</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_UltimateBionic</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_UltimateBionicSpine</defName>
+        <label>Ultimate Bionic Spine</label>
+        <description>Unlock Ultimate Bionic Spine</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_UltimateBionic</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_UltimateBionicExoSuit</defName>
+        <label>Ultimate Bionic ExoSuit</label>
+        <description>Unlock Ultimate Bionic ExoSuit</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_UltimateBionic</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2</researchViewY>
     </ResearchProjectDef>
 </Defs>

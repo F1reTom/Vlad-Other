@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <tech_UltimateBionic.label>Абсолютная бионика</tech_UltimateBionic.label>
+    <tech_UltimateBionicOrgan.label>Абсолютный бионические органы</tech_UltimateBionicOrgan.label>
+    <tech_UltimateBionicSpine.label>Абсолютный бионический позвоночник</tech_UltimateBionicSpine.label>
+    <tech_UltimateBionicExoSuit.label>Абсолютный бионический Экзо Костюм</tech_UltimateBionicExoSuit.label>
+
+    <tech_UltimateBionic.description>Открывает Абсолютные бионические протезы</tech_UltimateBionic.description>
+    <tech_UltimateBionicOrgan.description>Открывает Абсолютные бионические органы</tech_UltimateBionicOrgan.description>
+    <tech_UltimateBionicSpine.description>Открывает Абсолютный бионический позвоночник</tech_UltimateBionicSpine.description>
+    <tech_UltimateBionicExoSuit.description>Открывает Абсолютный бионический Экзо Костюм</tech_UltimateBionicExoSuit.description>
+</LanguageData>

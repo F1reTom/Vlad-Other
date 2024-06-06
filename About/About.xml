@@ -8,9 +8,9 @@
 	</supportedVersions>
     <modDependencies>
         <li>
-            <packageId>Ludeon.RimWorld.Royalty</packageId>
-			<displayName>Royalty</displayName>
-			<downloadUrl>https://store.steampowered.com/app/1149640/RimWorld__Royalty/</downloadUrl>
+            <packageId>vat.epoeforked</packageId>
+			<displayName>Expanded Prosthetics and Organ Engineering - Forked</displayName>
+			<downloadUrl>https://github.com/Aurani/EPOE-Forked</downloadUrl>
         </li>
     </modDependencies>
     <loadAfter>

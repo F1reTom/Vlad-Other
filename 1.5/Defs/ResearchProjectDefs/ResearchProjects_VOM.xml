@@ -15,7 +15,7 @@
             <li>AdvancedBionics</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>1</researchViewX>
+        <researchViewX>0</researchViewX>
         <researchViewY>3</researchViewY>
     </ResearchProjectDef>
 
@@ -29,7 +29,7 @@
             <li>tech_UltimateBionic</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>2</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>3</researchViewY>
     </ResearchProjectDef>
 
@@ -43,7 +43,7 @@
             <li>tech_UltimateBionic</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>2</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>4</researchViewY>
     </ResearchProjectDef>
 
@@ -57,7 +57,51 @@
             <li>tech_UltimateBionic</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>2</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_AdvancedBrainSurgery</defName>
+        <label>Advanced Brain Surgery</label>
+        <description>Unlock Advanced Brain Surgery</description>
+        <baseCost>6500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_UltimateBionicOrgan</li>
+            <li>tech_UltimateBionicSpine</li>
+            <li>tech_UltimateBionicExoSuit</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_PSYAdvancedBrainSurgery</defName>
+        <label>Advanced Brain Psy Surgery</label>
+        <description>Unlock Advanced Brain Psy Surgery</description>
+        <baseCost>6500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_AdvancedBrainSurgery</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_PSYUltimateBrainSurgery</defName>
+        <label>Ultimate Brain Psy Surgery</label>
+        <description>Unlock Ultimate Brain Psy Surgery</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_PSYAdvancedBrainSurgery</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>3</researchViewY>
     </ResearchProjectDef>
 </Defs>

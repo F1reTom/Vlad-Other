@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <HediffDef ParentName="addedPartAdvanced">
+    <HediffDef ParentName="addedPartUltimate">
         <defName>UltimateBionicLeg</defName>
         <label>ultimate bionic leg</label>
         <labelNoun>an ultimate bionic leg</labelNoun>
@@ -31,7 +31,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicLeg_install</defName>
         <label>install ultimate bionic leg</label>
         <description>install an ultimate bionic leg</description>
@@ -57,8 +57,8 @@
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicLeg</addsHediff>
     </RecipeDef>
-<!--0000000000000000000000000000000000000000000000000000000000000000000000-->
-    <HediffDef ParentName="addedPartAdvanced">
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartUltimate">
         <defName>UltimateBionicHand</defName>
         <label>ultimate bionic hand</label>
         <labelNoun>an ultimate bionic hand</labelNoun>
@@ -88,7 +88,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicHand_install</defName>
         <label>install ultimate bionic hand</label>
         <description>install an ultimate bionic hand</description>
@@ -114,8 +114,8 @@
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicHand</addsHediff>
     </RecipeDef>
-<!--0000000000000000000000000000000000000000000000000000000000000000000000-->
-    <HediffDef ParentName="addedPartAdvanced">
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartUltimate">
         <defName>UltimateBionicEye</defName>
         <label>ultimate bionic eye</label>
         <labelNoun>an ultimate bionic eye</labelNoun>
@@ -153,7 +153,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicEye_install</defName>
         <label>install ultimate bionic eye</label>
         <description>install an ultimate bionic eye</description>
@@ -179,8 +179,8 @@
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicEye</addsHediff>
     </RecipeDef>
-<!--0000000000000000000000000000000000000000000000000000000000000000000000-->
-    <HediffDef ParentName="addedPartAdvanced">
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartUltimate">
         <defName>UltimateBionicSpine</defName>
         <label>ultimate bionic spine</label>
         <labelNoun>an ultimate bionic spine</labelNoun>
@@ -216,7 +216,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicSpine_install</defName>
         <label>install ultimate bionic spine</label>
         <description>install an ultimate bionic spine</description>
@@ -242,8 +242,8 @@
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicSpine</addsHediff>
     </RecipeDef>
-    <!--0000000000000000000000000000000000000000000000000000000000000000000000-->
-    <HediffDef ParentName="addedPartAdvanced">
+    <!--==============================================================================-->
+    <HediffDef ParentName="addedPartUltimate">
         <defName>UltimateBionicExoSuit</defName>
         <label>ultimate bionic ExoSuit</label>
         <labelNoun>an ultimate bionic ExoSuit</labelNoun>
@@ -287,7 +287,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicExoSuit_install</defName>
         <label>install ultimate bionic ExoSuit</label>
         <description>install an ultimate bionic ExoSuit</description>
@@ -317,9 +317,9 @@
 		</incompatibleWithHediffTags>
     </RecipeDef>
 
-<!--0000000000000000000000000000ORGAN000000000000000000000000000000000000000000-->
+<!--=================================ORGAN=======================================-->
 
-    <HediffDef ParentName="addedPartAdvanced">
+    <HediffDef ParentName="addedPartUltimateOrgan">
         <defName>UltimateBionicHeart</defName>
         <label>ultimate bionic heart</label>
         <labelNoun>an ultimate bionic heart</labelNoun>
@@ -350,7 +350,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicHeart_install</defName>
         <label>install ultimate bionic heart</label>
         <description>install an ultimate bionic heart</description>
@@ -376,8 +376,8 @@
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicHeart</addsHediff>
     </RecipeDef>
-<!--0000000000000000000000000000000000000000000000000000000000000000000000-->
-    <HediffDef ParentName="addedPartAdvanced">
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartUltimateOrgan">
         <defName>UltimateBionicLiver</defName>
         <label>ultimate bionic liver</label>
         <labelNoun>an ultimate bionic liver</labelNoun>
@@ -408,7 +408,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicLiver_install</defName>
         <label>install ultimate bionic liver</label>
         <description>install an ultimate bionic liver</description>
@@ -434,8 +434,8 @@
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicLiver</addsHediff>
     </RecipeDef>
-    <!--0000000000000000000000000000000000000000000000000000000000000000000000-->
-    <HediffDef ParentName="addedPartAdvanced">
+    <!--==============================================================================-->
+    <HediffDef ParentName="addedPartUltimateOrgan">
         <defName>UltimateBionicLung</defName>
         <label>ultimate bionic lung</label>
         <labelNoun>an ultimate bionic lung</labelNoun>
@@ -466,7 +466,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
         <defName>UltimateBionicLung_install</defName>
         <label>install ultimate bionic lung</label>
         <description>install an ultimate bionic lung</description>
@@ -491,5 +491,8 @@
 			<li>Lung</li>
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicLung</addsHediff>
-    </RecipeDef>   
+    </RecipeDef>
+
+    <!--============================BRAIN=======================================================-->
+
 </Defs>

@@ -117,7 +117,7 @@
 
 	public static StatDef MeleeCooldownFactor;
 
-	[MayRequireBiotech]
+	[MayRequireBiotech]addedPartAdvanced
 	public static StatDef ToxicEnvironmentResistance;
 
 	[MayRequireBiotech]

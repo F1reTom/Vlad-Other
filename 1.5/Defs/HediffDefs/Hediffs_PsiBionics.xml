@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defName>PsychicSensitivityImplant</defName>
+        <label>Возбуждатель пси-чувствительности</label>
+        <labelNoun>Возбуждатель пси-чувствительности</labelNoun>
+        <description>Возбуждает пси-чувствительность.</description>
+        <descriptionHyperlinks><ThingDef>UltimateBionicLung</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>PsychicSensitivityImplant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicSensitivity>+1</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainPsyImplant">
+        <defName>PsychicSensitivityImplant</defName>
+        <label>Возбуждатель пси-чувствительности</label>
+        <description>Возбуждает пси-чувствительность</description>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+            <VPE_Eltex>7</VPE_Eltex>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallPsychicSensitivityImplant</defName>
+        <label>Установить Возбуждатель пси-чувствительности</label>
+        <description>Устанавливает Возбуждатель пси-чувствительности</description>
+        <jobString>Устанавливает Возбуждатель пси-чувствительности</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychicSensitivityImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychicSensitivityImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PsychicSensitivityImplant</addsHediff>
+    </RecipeDef>
+
+    <!--======================================================================-->
+
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defName>MeditationFocusGainImplant</defName>
+        <label>чип сосредоточения</label>
+        <labelNoun>чип сосредоточения</labelNoun>
+        <description>Успокаювающие волны пси энергии в мозг помогают в медитации</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeditationFocusGain>+0.5</MeditationFocusGain>
+                    <!-- <Ability_PsyfocusCost>-0.5</Ability_PsyfocusCost> -->
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainPsyImplant">
+        <defName>MeditationFocusGainImplant</defName>
+        <label>чип сосредоточения</label>
+        <description>Успокаювающие волны пси энергии в мозг помогают в медитации</description>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+            <VPE_Eltex>7</VPE_Eltex>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallMeditationFocusGainImplant</defName>
+        <label>Установить чип сосредоточения</label>
+        <description>Устанавливает чип сосредоточения</description>
+        <jobString>Устанавливает чип сосредоточения</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MeditationFocusGainImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MeditationFocusGainImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>MeditationFocusGainImplant</addsHediff>
+    </RecipeDef>
+
+    <!--==============================ENTROPY=======================================================-->
+
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defName>PsychicEntropyMaxImplant</defName>
+        <label>чип лимита</label>
+        <labelNoun>чип сосредоточения</labelNoun>
+        <description>Путём передачи части отдачи ближайшему архотеку, помогает псионику повысить свой предел нейроперегрева</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicEntropyMax>+20</PsychicEntropyMax>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainPsyImplant">
+        <defName>PsychicEntropyMaxImplant</defName>
+        <label>чип лимита</label>
+        <description>Путём передачи части отдачи ближайшему архотеку, помогает псионику повысить свой предел нейроперегрева</description>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+            <VPE_Eltex>7</VPE_Eltex>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallPsychicEntropyMaxImplant</defName>
+        <label>Установить чип лимита</label>
+        <description>Устанавливает чип лимита</description>
+        <jobString>Устанавливает чип лимита</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychicEntropyMaxImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychicEntropyMaxImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PsychicEntropyMaxImplant</addsHediff>
+    </RecipeDef>
+
+    <!--============================================================================-->
+
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defName>PsychicEntropyRecoveryRateImplant</defName>
+        <label>чип контроля</label>
+        <labelNoun>чип контроля</labelNoun>
+        <description>Путём увеличивания связи с архотеком, помогает псионику быстрее снижать свой уровень нейроперегрева</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicEntropyRecoveryRate>+10</PsychicEntropyRecoveryRate>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainPsyImplant">
+        <defName>PsychicEntropyRecoveryRateImplant</defName>
+        <label>чип контроля</label>
+        <description>Путём увеличивания связи с архотеком, помогает псионику быстрее снижать свой уровень нейроперегрева</description>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+            <VPE_Eltex>7</VPE_Eltex>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallPsychicEntropyRecoveryRateImplant</defName>
+        <label>Установить чип контроля</label>
+        <description>Устанавливает чип контроля</description>
+        <jobString>Устанавливает чип контроля</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychicEntropyRecoveryRateImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychicEntropyRecoveryRateImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PsychicEntropyRecoveryRateImplant</addsHediff>
+    </RecipeDef>
+
+    <!--=====================================================================-->
+
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defName>PsychicEntropyGainImplant</defName>
+        <label>чип передачи</label>
+        <labelNoun>чип передачи</labelNoun>
+        <description>Путём передачи части отдачи ближайшему архотеку, помогает псионику получать меньше нейроперегрева</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicEntropyGain>-0.5</PsychicEntropyGain>
+                    <PsychicEntropyRecoveryRate>+20</PsychicEntropyRecoveryRate>
+                    <PsychicEntropyMax>+50</PsychicEntropyMax>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainPsyImplant">
+        <defName>PsychicEntropyGainImplant</defName>
+        <label>чип передачи(G)</label>
+        <description>Успокаювающие волны пси энергии в мозг помогают в медитации</description>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+            <VPE_Eltex>7</VPE_Eltex>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallPsychicEntropyGainImplant</defName>
+        <label>Установить чип передачи</label>
+        <description>Устанавливает чип передачи</description>
+        <jobString>Устанавливает чип передачи</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychicEntropyGainImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychicEntropyGainImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PsychicEntropyGainImplant</addsHediff>
+    </RecipeDef>
+
+    <!--========================================================================-->
+
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defaultLabelColor>(128,0,0)</defaultLabelColor>
+        <defName>PsychicEntropyMegaImplant</defName>
+        <label>псионический чип</label>
+        <labelNoun>псионический чип</labelNoun>
+        <description>псионический чип это мечта каждого, все псионики хотят его, кто-то даже проиграл свой дом и семью в казино ради него. Этот чип был создан в утопических мирах, они таки пиздатые что они ахуенные</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicEntropyGain>-0.5</PsychicEntropyGain>
+                    <PsychicEntropyRecoveryRate>+20</PsychicEntropyRecoveryRate>
+                    <PsychicEntropyMax>+50</PsychicEntropyMax>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainUltimatePsyImplant">
+        <defName>PsychicEntropyMegaImplant</defName>
+        <label>псионический чип</label>
+        <description>псионический чип это мечта каждого, все псионики хотят его, кто-то даже проиграл свой дом и семью в казино ради него. Этот чип был создан в утопических мирах, они таки пиздатые что они ахуенные</description>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+        </statBases>
+        <costList>
+            <PsychicEntropyGainImplant>1</PsychicEntropyGainImplant>
+            <PsychicEntropyRecoveryRateImplant>1</PsychicEntropyRecoveryRateImplant>
+            <PsychicEntropyMaxImplant>1</PsychicEntropyMaxImplant>
+            <VPE_Eltex>20</VPE_Eltex>
+            <Gold>20</Gold>
+            <Plasteel>50</Plasteel>
+            <ComponentSpacer>8</ComponentSpacer>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallPsychicEntropyGainImplant</defName>
+        <label>Установить псионический чип</label>
+        <description>Устанавливает псионический чип</description>
+        <jobString>Устанавливает псионический чип</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychicEntropyMegaImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychicEntropyMegaImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PsychicEntropyMegaImplant</addsHediff>
+    </RecipeDef>
+
+</Defs>

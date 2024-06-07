@@ -5,24 +5,152 @@
         <researchPrerequisites>
             <li>tech_UltimateBionic</li>
         </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Item/BodyPart/UltimateBionicPart</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>TableBionics</li>
+            </recipeUsers>
+        </recipeMaker>
     </ThingDef>
+
+    
+
+
 
     <ThingDef Name="BodyPartUltimateBionicOrganBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
         <researchPrerequisites>
             <li>tech_UltimateBionicOrgan</li>
         </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Item/BodyPart/UltimateBionicOrgan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>TableOrgans</li>
+            </recipeUsers>
+        </recipeMaker>
     </ThingDef>
+
+    
 
     <ThingDef Name="BodyPartUltimateBionicSpineBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
         <researchPrerequisites>
             <li>tech_UltimateBionicSpine</li>
         </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Item/BodyPart/UltimateBionicPart</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>TableBionics</li>
+            </recipeUsers>
+        </recipeMaker>
     </ThingDef>
 
     <ThingDef Name="BodyPartUltimateBionicExoSuitBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
         <researchPrerequisites>
             <li>tech_UltimateBionicExoSuit</li>
         </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Item/BodyPart/UltimateBionicPart</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>TableBionics</li>
+            </recipeUsers>
+        </recipeMaker>
     </ThingDef>
+
+    
+
+    <ThingDef Name="SurgeryBrainPsyImplant" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
+        <researchPrerequisites>
+            <li>tech_PSYAdvancedBrainSurgery</li>
+        </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Item/BodyPart/PsiBionic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="SurgeryBrainUltimatePsyImplant" ParentName="SurgeryBrainPsyImplant" Abstract="True">
+        <researchPrerequisites>
+            <li>tech_PSYUltimateBrainSurgery</li>
+        </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Item/BodyPart/PsiBionic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="SurgeryBrainImplant" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
+        <researchPrerequisites>
+            <li>tech_AdvancedBrainSurgery</li>
+        </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Item/BodyPart/BrainImplant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--============================================================================================-->
+
+    <HediffDef Name="addedPartBrainImplant" ParentName="addedPartAdvanced" Abstract="True">
+        <defaultLabelColor>(32,178,170)</defaultLabelColor>
+    </HediffDef>
+
+    <HediffDef Name="addedPartBrainPsyImplant" ParentName="addedPartAdvanced" Abstract="True">
+        <defaultLabelColor>(25,25,112)</defaultLabelColor>
+    </HediffDef>
+
+    <HediffDef Name="addedPartUltimateOrgan" ParentName="addedPartAdvanced" Abstract="True">
+        <defaultLabelColor>(75,0,130)</defaultLabelColor>
+    </HediffDef>
+
+    <HediffDef Name="addedPartUltimate" ParentName="addedPartAdvanced" Abstract="True">
+        <defaultLabelColor>(0,255,127)</defaultLabelColor>
+    </HediffDef>
+
+    <!--============================================================================================-->
+
+    <RecipeDef Name="SurgeryInstallBodyPartUltimaBase" ParentName="SurgeryInstallBodyPartProstheticBase" Abstract="True"></RecipeDef>
+
+    <RecipeDef Name="SurgeryInstallBrainImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
+        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>10</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+    </RecipeDef>
 
 </Defs>

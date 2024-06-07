@@ -12,6 +12,11 @@
 			<displayName>Expanded Prosthetics and Organ Engineering - Forked</displayName>
 			<downloadUrl>https://github.com/Aurani/EPOE-Forked</downloadUrl>
         </li>
+        <li>
+            <packageId>VanillaExpanded.VPsycastsE</packageId>
+            <displayName>Vanilla Psycasts Expanded</displayName>
+            <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659</downloadUrl>
+        </li>
     </modDependencies>
     <loadAfter>
 		<li>Ludeon.RimWorld.Royalty</li>

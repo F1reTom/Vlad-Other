@@ -256,8 +256,8 @@
         <stages>
             <li>
                 <statOffsets>
-                    <MoveSpeed>+1.5</MoveSpeed>
-                    <CarryingCapacity>+50</CarryingCapacity>
+                    <MoveSpeed>+1</MoveSpeed>
+                    <CarryingCapacity>+20</CarryingCapacity>
                     <StuffPower_Armor_Sharp>+0.125</StuffPower_Armor_Sharp>
                     <StuffPower_Armor_Blunt>+0.125</StuffPower_Armor_Blunt>
                     <WorkSpeedGlobal>+0.1</WorkSpeedGlobal>

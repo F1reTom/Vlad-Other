@@ -7,8 +7,8 @@
 
     <ResearchProjectDef>
         <defName>tech_UltimateBionic</defName>
-        <label>Ultimate Bionic</label>
-        <description>Unlock Ultimate Bionic</description>
+        <label>Абсолютная бионика</label>
+        <description>Открывает Абсолютную бионику</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -21,8 +21,8 @@
 
     <ResearchProjectDef>
         <defName>tech_UltimateBionicOrgan</defName>
-        <label>Ultimate Bionic Organ</label>
-        <description>Unlock Ultimate Bionic Organ</description>
+        <label>Абсолютные бионические органы</label>
+        <description>Открывает Абсолютные бионические органы</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -35,8 +35,8 @@
 
     <ResearchProjectDef>
         <defName>tech_UltimateBionicSpine</defName>
-        <label>Ultimate Bionic Spine</label>
-        <description>Unlock Ultimate Bionic Spine</description>
+        <label>Абсолютный бионический позвоночник</label>
+        <description>Открывает Абсолютный бионический позвоночник</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -49,8 +49,8 @@
 
     <ResearchProjectDef>
         <defName>tech_UltimateBionicExoSuit</defName>
-        <label>Ultimate Bionic ExoSuit</label>
-        <description>Unlock Ultimate Bionic ExoSuit</description>
+        <label>Абсолютный бионический Экзо Костюм</label>
+        <description>Открывает Абсолютный бионический Экзо Костюм</description>
         <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -63,8 +63,8 @@
 
     <ResearchProjectDef>
         <defName>tech_AdvancedBrainSurgery</defName>
-        <label>Advanced Brain Surgery</label>
-        <description>Unlock Advanced Brain Surgery</description>
+        <label>Продвинутая хирургия на мозге</label>
+        <description>Открывает Продвинутую хирургию на мозге</description>
         <baseCost>6500</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -79,8 +79,8 @@
 
     <ResearchProjectDef>
         <defName>tech_PSYAdvancedBrainSurgery</defName>
-        <label>Advanced Brain Psy Surgery</label>
-        <description>Unlock Advanced Brain Psy Surgery</description>
+        <label>Продвинутая псионическая хирургия на мозге</label>
+        <description>Открывает Продвинутую псионическую хирургию на мозге</description>
         <baseCost>6500</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -88,13 +88,13 @@
         </prerequisites>
         <tab>VOM</tab>
         <researchViewX>3</researchViewX>
-        <researchViewY>2</researchViewY>
+        <researchViewY>4</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef>
         <defName>tech_PSYUltimateBrainSurgery</defName>
-        <label>Ultimate Brain Psy Surgery</label>
-        <description>Unlock Ultimate Brain Psy Surgery</description>
+        <label>Абсолютная псионическая хирургия на мозге</label>
+        <description>Открывает Абсолютную псионическую хирургию на мозге</description>
         <baseCost>8000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
@@ -102,6 +102,20 @@
         </prerequisites>
         <tab>VOM</tab>
         <researchViewX>3</researchViewX>
-        <researchViewY>3</researchViewY>
+        <researchViewY>5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_PSYNemesisBrainSurgery</defName>
+        <label>Пустотная псионическая хирургия на мозге</label>
+        <description>Открывает Пустотную псионическую хирургию на мозге</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_PSYUltimateBrainSurgery</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>6</researchViewY>
     </ResearchProjectDef>
 </Defs>

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef Name="BodyPartUltimateBionicBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
-        <researchPrerequisites>
-            <li>tech_UltimateBionic</li>
-        </researchPrerequisites>
+    <ThingDef Name="BodyPartVladBionicBase" ParentName="BodyPartBionicBase" Abstract="True">
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+         <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+    </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="BodyPartUltimateBionicBase" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/UltimateBionicPart</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -13,6 +19,7 @@
             <recipeUsers>
                 <li>TableBionics</li>
             </recipeUsers>
+            <researchPrerequisite>tech_UltimateBionic</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 
@@ -20,10 +27,7 @@
 
 
 
-    <ThingDef Name="BodyPartUltimateBionicOrganBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
-        <researchPrerequisites>
-            <li>tech_UltimateBionicOrgan</li>
-        </researchPrerequisites>
+    <ThingDef Name="BodyPartUltimateBionicOrganBase" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/UltimateBionicOrgan</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -32,15 +36,13 @@
             <recipeUsers>
                 <li>TableOrgans</li>
             </recipeUsers>
+            <researchPrerequisite>tech_UltimateBionicOrgan</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 
     
 
-    <ThingDef Name="BodyPartUltimateBionicSpineBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
-        <researchPrerequisites>
-            <li>tech_UltimateBionicSpine</li>
-        </researchPrerequisites>
+    <ThingDef Name="BodyPartUltimateBionicSpineBase" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/UltimateBionicPart</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -49,13 +51,11 @@
             <recipeUsers>
                 <li>TableBionics</li>
             </recipeUsers>
+            <researchPrerequisite>tech_UltimateBionicSpine</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 
-    <ThingDef Name="BodyPartUltimateBionicExoSuitBase" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
-        <researchPrerequisites>
-            <li>tech_UltimateBionicExoSuit</li>
-        </researchPrerequisites>
+    <ThingDef Name="BodyPartUltimateBionicExoSuitBase" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/UltimateBionicPart</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -64,15 +64,13 @@
             <recipeUsers>
                 <li>TableBionics</li>
             </recipeUsers>
+            <researchPrerequisite>tech_UltimateBionicExoSuit</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 
     
 
-    <ThingDef Name="SurgeryBrainPsyImplant" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
-        <researchPrerequisites>
-            <li>tech_PSYAdvancedBrainSurgery</li>
-        </researchPrerequisites>
+    <ThingDef Name="SurgeryBrainPsyImplant" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/PsiBionic</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -81,13 +79,11 @@
             <recipeUsers>
                 <li>FabricationBench</li>
             </recipeUsers>
+            <researchPrerequisite>tech_PSYAdvancedBrainSurgery</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 
-    <ThingDef Name="SurgeryBrainUltimatePsyImplant" ParentName="SurgeryBrainPsyImplant" Abstract="True">
-        <researchPrerequisites>
-            <li>tech_PSYUltimateBrainSurgery</li>
-        </researchPrerequisites>
+    <ThingDef Name="SurgeryBrainUltimatePsyImplant" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/PsiBionic</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -96,13 +92,11 @@
             <recipeUsers>
                 <li>FabricationBench</li>
             </recipeUsers>
+            <researchPrerequisite>tech_PSYUltimateBrainSurgery</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 
-    <ThingDef Name="SurgeryBrainImplant" ParentName="EPIA_UpgradeBodyPartAdvancedBionicBase" Abstract="True">
-        <researchPrerequisites>
-            <li>tech_AdvancedBrainSurgery</li>
-        </researchPrerequisites>
+    <ThingDef Name="SurgeryBrainImplant" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/BrainImplant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -111,6 +105,7 @@
             <recipeUsers>
                 <li>FabricationBench</li>
             </recipeUsers>
+            <researchPrerequisite>tech_AdvancedBrainSurgery</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 

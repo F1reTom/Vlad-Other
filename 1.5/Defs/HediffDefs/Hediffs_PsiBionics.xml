@@ -117,6 +117,67 @@
         <addsHediff>MeditationFocusGainImplant</addsHediff>
     </RecipeDef>
 
+    <!--==============================================================================-->
+
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defName>AmbiguitiesImplant</defName>
+        <label>чип неоднозначности</label>
+        <labelNoun>чип неоднозначности</labelNoun>
+        <description>чип который был создан из чипа возбуждения и сосредоточения, как такое возможно? Улучшает концентрацию и пси-чувствительность псионика</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeditationFocusGain>+0.6</MeditationFocusGain>
+                    <Ability_PsyfocusCost>-0.5</Ability_PsyfocusCost>
+                    <PsychicSensitivity>+2</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainUltimatePsyImplant">
+        <defName>AmbiguitiesImplant</defName>
+        <label>чип неоднозначности</label>
+        <description>чип который был создан из чипа возбуждения и сосредоточения, как такое возможно? Улучшает концентрацию и пси-чувствительность псионика</description>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+        <costList>
+            <PsychicSensitivityImplant>1</PsychicSensitivityImplant>
+            <MeditationFocusGainImplant>1</MeditationFocusGainImplant>
+            <Gold>2.5</Gold>
+			<Plasteel>80</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+            <VPE_Eltex>20</VPE_Eltex>
+        </costList>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallAmbiguitiesImplant</defName>
+        <label>Установить чип неоднозначности</label>
+        <description>Устанавливает чип неоднозначности</description>
+        <jobString>Устанавливает чип неоднозначности</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AmbiguitiesImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AmbiguitiesImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>AmbiguitiesImplant</addsHediff>
+    </RecipeDef>
+
     <!--==============================ENTROPY=======================================================-->
 
     <HediffDef ParentName="addedPartBrainPsyImplant">
@@ -244,8 +305,6 @@
             <li>
                 <statOffsets>
                     <PsychicEntropyGain>-0.5</PsychicEntropyGain>
-                    <PsychicEntropyRecoveryRate>+20</PsychicEntropyRecoveryRate>
-                    <PsychicEntropyMax>+50</PsychicEntropyMax>
                 </statOffsets>
             </li>
         </stages>
@@ -253,7 +312,7 @@
 
     <ThingDef ParentName="SurgeryBrainPsyImplant">
         <defName>PsychicEntropyGainImplant</defName>
-        <label>чип передачи(G)</label>
+        <label>чип передачи</label>
         <description>Успокаювающие волны пси энергии в мозг помогают в медитации</description>
         <statBases>
             <WorkToMake>55000</WorkToMake>
@@ -265,6 +324,11 @@
 			<ComponentSpacer>5</ComponentSpacer>
             <VPE_Eltex>7</VPE_Eltex>
         </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
     </ThingDef>
 
     <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
@@ -324,14 +388,19 @@
             <PsychicEntropyRecoveryRateImplant>1</PsychicEntropyRecoveryRateImplant>
             <PsychicEntropyMaxImplant>1</PsychicEntropyMaxImplant>
             <VPE_Eltex>20</VPE_Eltex>
-            <Gold>20</Gold>
+            <Gold>2</Gold>
             <Plasteel>50</Plasteel>
             <ComponentSpacer>8</ComponentSpacer>
         </costList>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
     </ThingDef>
 
     <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
-        <defName>InstallPsychicEntropyGainImplant</defName>
+        <defName>InstallPsychicEntropyMegaImplant</defName>
         <label>Установить псионический чип</label>
         <description>Устанавливает псионический чип</description>
         <jobString>Устанавливает псионический чип</jobString>
@@ -354,6 +423,77 @@
             <li>Brain</li>
         </appliedOnFixedBodyParts>
         <addsHediff>PsychicEntropyMegaImplant</addsHediff>
+    </RecipeDef>
+
+    <!--=======================FINALLY============================-->
+
+    <HediffDef ParentName="addedPartBrainPsyImplant">
+        <defaultLabelColor>(128,0,0)</defaultLabelColor>
+        <defName>FinallyPsyImplant</defName>
+        <label>псионический чип "НЕМЕЗИС"</label>
+        <labelNoun>псионический чип "НЕМЕЗИС"</labelNoun>
+        <description>псионический чип это мечта каждого, все псионики хотят его, кто-то даже проиграл свой дом и семью в казино ради него. Этот чип был создан в утопических мирах, они таки пиздатые что они ахуенные</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicEntropyGain>-0.8</PsychicEntropyGain>
+                    <PsychicEntropyRecoveryRate>+30</PsychicEntropyRecoveryRate>
+                    <PsychicEntropyMax>+100</PsychicEntropyMax>
+                    <MeditationFocusGain>+1</MeditationFocusGain>
+                    <Ability_PsyfocusCost>-0.8</Ability_PsyfocusCost>
+                    <PsychicSensitivity>+3</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryBrainUltimatePsyImplant">
+        <defName>FinallyPsyImplant</defName>
+        <label>псионический чип "НЕМЕЗИС"</label>
+        <description>псионический чип это мечта каждого, все псионики хотят его, кто-то даже проиграл свой дом и семью в казино ради него. Этот чип был создан в утопических мирах, они таки пиздатые что они ахуенные</description>
+        <statBases>
+            <WorkToMake>100000</WorkToMake>
+        </statBases>
+        <costList>
+            <AmbiguitiesImplant>1</AmbiguitiesImplant>
+            <PsychicEntropyMegaImplant>1</PsychicEntropyMegaImplant>
+            <VPE_Eltex>35</VPE_Eltex>
+            <Gold>5</Gold>
+            <Plasteel>200</Plasteel>
+            <ComponentSpacer>20</ComponentSpacer>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>tech_PSYNemesisBrainSurgery</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+        <defName>InstallFinallyPsyImplant</defName>
+        <label>Установить псионический чип "НЕМЕЗИС"</label>
+        <description>Устанавливает псионический чип "НЕМЕЗИС"</description>
+        <jobString>Устанавливает псионический чип "НЕМЕЗИС"</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FinallyPsyImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>FinallyPsyImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>FinallyPsyImplant</addsHediff>
     </RecipeDef>
 
 </Defs>

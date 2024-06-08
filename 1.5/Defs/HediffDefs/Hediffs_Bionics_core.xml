@@ -3,7 +3,7 @@
 
     <ThingDef Name="BodyPartVladBionicBase" ParentName="BodyPartBionicBase" Abstract="True">
     <techLevel>Spacer</techLevel>
-    <recipeMaker>
+    <recipeMaker Inherit="False">
          <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
@@ -22,10 +22,6 @@
             <researchPrerequisite>tech_UltimateBionic</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
-
-    
-
-
 
     <ThingDef Name="BodyPartUltimateBionicOrganBase" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
@@ -96,7 +92,7 @@
         </recipeMaker>
     </ThingDef>
 
-    <ThingDef Name="SurgeryBrainImplant" ParentName="BodyPartVladBionicBase" Abstract="True">
+    <ThingDef Name="SurgeryVOMImplant" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
             <texPath>Things/Item/BodyPart/BrainImplant</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -111,12 +107,14 @@
 
     <!--============================================================================================-->
 
-    <HediffDef Name="addedPartBrainImplant" ParentName="addedPartAdvanced" Abstract="True">
+    <HediffDef Name="addedPartVOMImplant" ParentName="addedPartAdvanced" Abstract="True">
         <defaultLabelColor>(32,178,170)</defaultLabelColor>
+        <hediffClass>Hediff_Implant</hediffClass>
     </HediffDef>
 
     <HediffDef Name="addedPartBrainPsyImplant" ParentName="addedPartAdvanced" Abstract="True">
         <defaultLabelColor>(25,25,112)</defaultLabelColor>
+        <hediffClass>Hediff_Implant</hediffClass>
     </HediffDef>
 
     <HediffDef Name="addedPartUltimateOrgan" ParentName="addedPartAdvanced" Abstract="True">
@@ -131,7 +129,7 @@
 
     <RecipeDef Name="SurgeryInstallBodyPartUltimaBase" ParentName="SurgeryInstallBodyPartProstheticBase" Abstract="True"></RecipeDef>
 
-    <RecipeDef Name="SurgeryInstallBrainImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
+    <RecipeDef Name="SurgeryInstallVOMImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
         <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
 		<skillRequirements>
 			<Medicine>10</Medicine>

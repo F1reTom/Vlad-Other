@@ -17,10 +17,18 @@
             <displayName>Vanilla Psycasts Expanded</displayName>
             <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659</downloadUrl>
         </li>
+        <li>
+        <packageId>imranfish.xmlextensions</packageId>
+	    <displayName>XML Extensions</displayName>
+	    <downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+    </li>
     </modDependencies>
     <loadAfter>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>vat.epoeforked</li>
+        <li>VanillaExpanded.VPsycastsE</li>
+        <li>imranfish.xmlextensions</li>
 	</loadAfter>
     <description>Надеюсь он что-нибудь делает...</description>
 </ModMetaData>

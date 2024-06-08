@@ -495,4 +495,65 @@
 
     <!--============================BRAIN=======================================================-->
 
+    <HediffDef ParentName="addedPartVOMImplant">
+        <defName>SpeedImplant</defName>
+        <label>Имплант скорости</label>
+        <labelNoun>Имплант скоростиg</labelNoun>
+        <description></description>
+        <descriptionHyperlinks><ThingDef>UltimateBionicLung</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>SpeedImplant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>+2</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryVOMImplant">
+        <defName>SpeedImplant</defName>
+        <label>Имплант скорости</label>
+        <description></description>
+        <descriptionHyperlinks><RecipeDef>SpeedImplant_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
+        <defName>SpeedImplant_install</defName>
+        <label>Установить Имплант скорости</label>
+        <description>Устанавливает Имплант скорости</description>
+        <descriptionHyperlinks><ThingDef>SpeedImplant</ThingDef></descriptionHyperlinks>
+        <jobString>Устанавливает Имплант скорости</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SpeedImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SpeedImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>SpeedImplant</addsHediff>
+    </RecipeDef>
+
+    <!--=======================================================================================-->
+
+    
 </Defs>

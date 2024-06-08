@@ -32,7 +32,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallPsychicSensitivityImplant</defName>
         <label>Установить Возбуждатель пси-чувствительности</label>
         <description>Устанавливает Возбуждатель пси-чувствительности</description>
@@ -91,7 +91,7 @@
         </costList>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallMeditationFocusGainImplant</defName>
         <label>Установить чип сосредоточения</label>
         <description>Устанавливает чип сосредоточения</description>
@@ -152,7 +152,7 @@
         </costList>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallAmbiguitiesImplant</defName>
         <label>Установить чип неоднозначности</label>
         <description>Устанавливает чип неоднозначности</description>
@@ -210,7 +210,7 @@
         </costList>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallPsychicEntropyMaxImplant</defName>
         <label>Установить чип лимита</label>
         <description>Устанавливает чип лимита</description>
@@ -268,7 +268,7 @@
         </costList>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallPsychicEntropyRecoveryRateImplant</defName>
         <label>Установить чип контроля</label>
         <description>Устанавливает чип контроля</description>
@@ -331,7 +331,7 @@
         </recipeMaker>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallPsychicEntropyGainImplant</defName>
         <label>Установить чип передачи</label>
         <description>Устанавливает чип передачи</description>
@@ -399,7 +399,7 @@
         </recipeMaker>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallPsychicEntropyMegaImplant</defName>
         <label>Установить псионический чип</label>
         <description>Устанавливает псионический чип</description>
@@ -470,7 +470,7 @@
         </recipeMaker>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBrainImplantBase">
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
         <defName>InstallFinallyPsyImplant</defName>
         <label>Установить псионический чип "НЕМЕЗИС"</label>
         <description>Устанавливает псионический чип "НЕМЕЗИС"</description>

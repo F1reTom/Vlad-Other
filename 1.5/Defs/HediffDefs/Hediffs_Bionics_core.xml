@@ -101,7 +101,7 @@
             <recipeUsers>
                 <li>FabricationBench</li>
             </recipeUsers>
-            <researchPrerequisite>tech_AdvancedBrainSurgery</researchPrerequisite>
+            <researchPrerequisite>tech_AdvancedImplantSurgery</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 

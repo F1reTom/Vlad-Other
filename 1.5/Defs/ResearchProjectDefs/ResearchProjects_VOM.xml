@@ -62,7 +62,7 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef>
-        <defName>tech_AdvancedBrainSurgery</defName>
+        <defName>tech_AdvancedImplantSurgery</defName>
         <label>Продвинутая хирургия на мозге</label>
         <description>Открывает Продвинутую хирургию на мозге</description>
         <baseCost>6500</baseCost>
@@ -84,7 +84,7 @@
         <baseCost>6500</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
-            <li>tech_AdvancedBrainSurgery</li>
+            <li>tech_AdvancedImplantSurgery</li>
         </prerequisites>
         <tab>VOM</tab>
         <researchViewX>3</researchViewX>

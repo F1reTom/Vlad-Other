@@ -21,10 +21,11 @@
         <description>The ultimate bionic leg. She is much better than her predecessors, she is beautiful, she is absolute</description>
         <descriptionHyperlinks><RecipeDef>UltimateBionicLeg_install</RecipeDef></descriptionHyperlinks>
         <costList>
-            <Steel>70</Steel>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>10</ComponentIndustrial>
-			<ComponentSpacer>8</ComponentSpacer>
+            <Steel>50</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
+            <AdvancedBionicLeg>1</AdvancedBionicLeg>
         </costList>
         <statBases>
             <WorkToMake>55000</WorkToMake>
@@ -78,10 +79,11 @@
         <description>The ultimate bionic hand. She is much better than her predecessors, she is beautiful, she is absolute</description>
         <descriptionHyperlinks><ThingDef>UltimateBionicHand</ThingDef></descriptionHyperlinks>
         <costList>
-            <Steel>70</Steel>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>10</ComponentIndustrial>
-			<ComponentSpacer>8</ComponentSpacer>
+            <Steel>50</Steel>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
+            <AdvancedBionicArm>1</AdvancedBionicArm>
         </costList>
         <statBases>
             <WorkToMake>55000</WorkToMake>
@@ -143,10 +145,11 @@
         <description>The ultimate bionic eye. She is much better than her predecessors, she is beautiful, she is absolute</description>
         <descriptionHyperlinks><ThingDef>UltimateBionicEye</ThingDef></descriptionHyperlinks>
         <costList>
-            <Steel>50</Steel>
-			<Plasteel>20</Plasteel>
+            <Steel>30</Steel>
+			<Plasteel>15</Plasteel>
 			<ComponentIndustrial>6</ComponentIndustrial>
-			<ComponentSpacer>6</ComponentSpacer>
+			<ComponentSpacer>4</ComponentSpacer>
+            <AdvancedBionicEye>1</AdvancedBionicEye>
         </costList>
         <statBases>
             <WorkToMake>55000</WorkToMake>
@@ -207,9 +210,10 @@
         <descriptionHyperlinks><ThingDef>UltimateBionicSpine</ThingDef></descriptionHyperlinks>
         <costList>
             <Steel>70</Steel>
-			<Plasteel>70</Plasteel>
-			<ComponentIndustrial>12</ComponentIndustrial>
-			<ComponentSpacer>8</ComponentSpacer>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
+            <AdvancedBionicSpine>1</AdvancedBionicSpine>
         </costList>
         <statBases>
             <WorkToMake>55000</WorkToMake>
@@ -256,12 +260,17 @@
         <stages>
             <li>
                 <statOffsets>
-                    <MoveSpeed>+1</MoveSpeed>
                     <CarryingCapacity>+20</CarryingCapacity>
                     <StuffPower_Armor_Sharp>+0.125</StuffPower_Armor_Sharp>
                     <StuffPower_Armor_Blunt>+0.125</StuffPower_Armor_Blunt>
                     <WorkSpeedGlobal>+0.1</WorkSpeedGlobal>
                 </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.40</offset>
+                    </li>
+                </capMods>
             </li>
         </stages>
         <comps>
@@ -277,10 +286,11 @@
         <description>The ultimate bionic ExoSuit. She is much better than her predecessors, she is beautiful, she is absolute</description>
         <descriptionHyperlinks><ThingDef>UltimateBionicExoSuit</ThingDef></descriptionHyperlinks>
         <costList>
-            <Steel>200</Steel>
-			<Plasteel>100</Plasteel>
-			<ComponentIndustrial>17</ComponentIndustrial>
-			<ComponentSpacer>12</ComponentSpacer>
+            <Steel>100</Steel>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+            <ExoskeletonSuit>1</ExoskeletonSuit>
         </costList>
         <statBases>
             <WorkToMake>70000</WorkToMake>
@@ -498,8 +508,8 @@
     <HediffDef ParentName="addedPartVOMImplant">
         <defName>SpeedImplant</defName>
         <label>Имплант скорости</label>
-        <labelNoun>Имплант скоростиg</labelNoun>
-        <description></description>
+        <labelNoun>Имплант скорости</labelNoun>
+        <description>REPLACE</description>
         <descriptionHyperlinks><ThingDef>UltimateBionicLung</ThingDef></descriptionHyperlinks>
         <spawnThingOnRemoved>SpeedImplant</spawnThingOnRemoved>
         <stages>
@@ -514,7 +524,7 @@
     <ThingDef ParentName="SurgeryVOMImplant">
         <defName>SpeedImplant</defName>
         <label>Имплант скорости</label>
-        <description></description>
+        <description>REPLACE</description>
         <descriptionHyperlinks><RecipeDef>SpeedImplant_install</RecipeDef></descriptionHyperlinks>
         <costList>
             <Steel>70</Steel>

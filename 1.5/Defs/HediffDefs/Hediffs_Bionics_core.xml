@@ -101,14 +101,28 @@
             <recipeUsers>
                 <li>FabricationBench</li>
             </recipeUsers>
+            <researchPrerequisite>tech_ImplantSurgery</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="SurgeryAdvancedVOMImplant" ParentName="SurgeryVOMImplant" Abstract="True">
+        <recipeMaker>
             <researchPrerequisite>tech_AdvancedImplantSurgery</researchPrerequisite>
         </recipeMaker>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+        </statBases>
     </ThingDef>
 
     <!--============================================================================================-->
 
     <HediffDef Name="addedPartVOMImplant" ParentName="addedPartAdvanced" Abstract="True">
         <defaultLabelColor>(32,178,170)</defaultLabelColor>
+        <hediffClass>Hediff_Implant</hediffClass>
+    </HediffDef>
+
+    <HediffDef Name="addedPartAdvancedVOMImplant" ParentName="addedPartAdvanced" Abstract="True">
+        <defaultLabelColor>(32,178,200)</defaultLabelColor>
         <hediffClass>Hediff_Implant</hediffClass>
     </HediffDef>
 
@@ -141,7 +155,24 @@
 						<li>Medicine</li>
 					</categories>
 				</filter>
-				<count>8</count>
+				<count>4</count>
+			</li>
+		</ingredients>
+    </RecipeDef>
+
+    <RecipeDef Name="SurgeryInstallAdvancedVOMImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
+        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+		<skillRequirements>
+			<Medicine>12</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>6</count>
 			</li>
 		</ingredients>
     </RecipeDef>

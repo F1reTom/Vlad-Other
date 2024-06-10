@@ -5,6 +5,8 @@
         <label>VLAD Protesis</label>
     </ResearchTabDef>
 
+    <!--BIONICS-->
+
     <ResearchProjectDef>
         <defName>tech_UltimateBionic</defName>
         <label>Абсолютная бионика</label>
@@ -61,11 +63,13 @@
         <researchViewY>2</researchViewY>
     </ResearchProjectDef>
 
+    <!--IMPLANTS-->
+
     <ResearchProjectDef>
-        <defName>tech_AdvancedImplantSurgery</defName>
-        <label>Продвинутая хирургия на мозге</label>
-        <description>Открывает Продвинутую хирургию на мозге</description>
-        <baseCost>6500</baseCost>
+        <defName>tech_ImplantSurgery</defName>
+        <label>Имплантирование</label>
+        <description>Открывает Имплантирование</description>
+        <baseCost>5000</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>tech_UltimateBionicOrgan</li>
@@ -76,6 +80,22 @@
         <researchViewX>3</researchViewX>
         <researchViewY>3</researchViewY>
     </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_AdvancedImplantSurgery</defName>
+        <label>Продвинутое Имплантирование</label>
+        <description>Открывает Продвинутое Имплантирование</description>
+        <baseCost>5000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_ImplantSurgery</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+    </ResearchProjectDef>
+
+    <!--PSY-->
 
     <ResearchProjectDef>
         <defName>tech_PSYAdvancedBrainSurgery</defName>

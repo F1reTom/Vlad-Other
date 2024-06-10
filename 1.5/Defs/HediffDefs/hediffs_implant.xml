@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="addedPartVOMImplant">
+        <defName>SpeedImplant</defName>
+        <label>Имплант скорости</label>
+        <labelNoun>Имплант скорости</labelNoun>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><ThingDef>SpeedImplant</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>SpeedImplant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>+2</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryVOMImplant">
+        <defName>SpeedImplant</defName>
+        <label>Имплант скорости</label>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><RecipeDef>SpeedImplant_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+            <EPOE_MAAI_Chip>1</EPOE_MAAI_Chip>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
+        <defName>SpeedImplant_install</defName>
+        <label>Установить Имплант скорости</label>
+        <description>Устанавливает Имплант скорости</description>
+        <descriptionHyperlinks><ThingDef>SpeedImplant</ThingDef></descriptionHyperlinks>
+        <jobString>Устанавливает Имплант скорости</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SpeedImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SpeedImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>SpeedImplant</addsHediff>
+    </RecipeDef>
+
+    <!--===================================================================================-->
+
+    <HediffDef ParentName="addedPartVOMImplant">
+        <defName>MindImplant</defName>
+        <label>Имплант разума</label>
+        <labelNoun>Имплант разума</labelNoun>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><ThingDef>MindImplant</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>MindImplant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ResearchSpeedFactor>+0.7</ResearchSpeedFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryVOMImplant">
+        <defName>MindImplant</defName>
+        <label>Имплант разума</label>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><RecipeDef>MindImplant_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+            <EPOE_MAAI_Chip>1</EPOE_MAAI_Chip>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
+        <defName>MindImplant_install</defName>
+        <label>Установить Имплант разума</label>
+        <description>Устанавливает Имплант разума</description>
+        <descriptionHyperlinks><ThingDef>MindImplant</ThingDef></descriptionHyperlinks>
+        <jobString>Устанавливает Имплант разума</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MindImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MindImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>MindImplant</addsHediff>
+    </RecipeDef>
+
+<!--===========================================================================-->
+
+    <HediffDef ParentName="addedPartVOMImplant">
+        <defName>MeleeImplant</defName>
+        <label>Имплант ближнего боя</label>
+        <labelNoun>Имплант ближнего боя</labelNoun>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><ThingDef>MeleeImplant</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>MeleeImplant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeWeapon_DamageMultiplier>-0.2</MeleeWeapon_DamageMultiplier>
+                    <MeleeWeapon_CooldownMultiplier>0.4</MeleeWeapon_CooldownMultiplier>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryVOMImplant">
+        <defName>MeleeImplant</defName>
+        <label>Имплант ближнего боя</label>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><RecipeDef>MeleeImplant_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+            <EPOE_MAAI_Chip>1</EPOE_MAAI_Chip>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
+        <defName>MeleeImplant_install</defName>
+        <label>Установить Имплант ближнего боя</label>
+        <description>Устанавливает Имплант ближнего боя</description>
+        <descriptionHyperlinks><ThingDef>MeleeImplant</ThingDef></descriptionHyperlinks>
+        <jobString>Устанавливает Имплант ближнего боя</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MeleeImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MeleeImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>MeleeImplant</addsHediff>
+    </RecipeDef>
+
+<!--===========================================================================-->
+
+    <HediffDef ParentName="addedPartVOMImplant">
+        <defName>RangeImplant</defName>
+        <label>Имплант стрелка</label>
+        <labelNoun>Имплант стрелка</labelNoun>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><ThingDef>RangeImplant</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>RangeImplant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <RangedCooldownFactor>-0.2</RangedCooldownFactor>
+                    <RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryVOMImplant">
+        <defName>RangeImplant</defName>
+        <label>Имплант стрелка</label>
+        <description>REPLACE</description>
+        <descriptionHyperlinks><RecipeDef>RangeImplant_install</RecipeDef></descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+            <EPOE_MAAI_Chip>1</EPOE_MAAI_Chip>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
+        <defName>RangeImplant_install</defName>
+        <label>Установить Имплант стрелка</label>
+        <description>Устанавливает Имплант стрелка</description>
+        <descriptionHyperlinks><ThingDef>RangeImplant</ThingDef></descriptionHyperlinks>
+        <jobString>Устанавливает Имплант стрелка</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RangeImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RangeImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>RangeImplant</addsHediff>
+    </RecipeDef>
+</Defs>

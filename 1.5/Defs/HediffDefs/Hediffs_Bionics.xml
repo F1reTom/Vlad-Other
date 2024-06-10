@@ -10,7 +10,7 @@
         <spawnThingOnRemoved>UltimateBionicLeg</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.5</partEfficiency>
+			<partEfficiency>1.4</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
     </HediffDef>
@@ -68,7 +68,7 @@
         <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.5</partEfficiency>
+			<partEfficiency>1.4</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
     </HediffDef>
@@ -126,7 +126,7 @@
         <spawnThingOnRemoved>UltimateBionicEye</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.5</partEfficiency>
+			<partEfficiency>1.4</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
         <stages>
@@ -192,7 +192,7 @@
         <spawnThingOnRemoved>UltimateBionicSpine</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.5</partEfficiency>
+			<partEfficiency>1.4</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
         <stages>
@@ -249,6 +249,7 @@
     <!--==============================================================================-->
     <HediffDef ParentName="addedPartUltimate">
         <defName>UltimateBionicExoSuit</defName>
+        <hediffClass>Hediff_Implant</hediffClass>
         <label>ultimate bionic ExoSuit</label>
         <labelNoun>an ultimate bionic ExoSuit</labelNoun>
         <description>An installed ultimate bionic ExoSuit.</description>
@@ -268,7 +269,7 @@
                 <capMods>
                     <li>
                         <capacity>Moving</capacity>
-                        <offset>0.40</offset>
+                        <offset>0.30</offset>
                     </li>
                 </capMods>
             </li>
@@ -338,7 +339,7 @@
         <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.5</partEfficiency>
+			<partEfficiency>1.4</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
     </HediffDef>
@@ -396,7 +397,7 @@
         <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.5</partEfficiency>
+			<partEfficiency>1.4</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
     </HediffDef>
@@ -454,7 +455,7 @@
         <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
-			<partEfficiency>1.5</partEfficiency>
+			<partEfficiency>1.4</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
     </HediffDef>
@@ -502,68 +503,4 @@
 		</appliedOnFixedBodyParts>
         <addsHediff>UltimateBionicLung</addsHediff>
     </RecipeDef>
-
-    <!--============================BRAIN=======================================================-->
-
-    <HediffDef ParentName="addedPartVOMImplant">
-        <defName>SpeedImplant</defName>
-        <label>Имплант скорости</label>
-        <labelNoun>Имплант скорости</labelNoun>
-        <description>REPLACE</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLung</ThingDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>SpeedImplant</spawnThingOnRemoved>
-        <stages>
-            <li>
-                <statOffsets>
-                    <MoveSpeed>+2</MoveSpeed>
-                </statOffsets>
-            </li>
-        </stages>
-    </HediffDef>
-
-    <ThingDef ParentName="SurgeryVOMImplant">
-        <defName>SpeedImplant</defName>
-        <label>Имплант скорости</label>
-        <description>REPLACE</description>
-        <descriptionHyperlinks><RecipeDef>SpeedImplant_install</RecipeDef></descriptionHyperlinks>
-        <costList>
-            <Steel>70</Steel>
-			<Plasteel>50</Plasteel>
-			<ComponentSpacer>12</ComponentSpacer>
-        </costList>
-        <statBases>
-            <WorkToMake>55000</WorkToMake>
-        </statBases>
-    </ThingDef>
-
-    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
-        <defName>SpeedImplant_install</defName>
-        <label>Установить Имплант скорости</label>
-        <description>Устанавливает Имплант скорости</description>
-        <descriptionHyperlinks><ThingDef>SpeedImplant</ThingDef></descriptionHyperlinks>
-        <jobString>Устанавливает Имплант скорости</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>SpeedImplant</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>SpeedImplant</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <appliedOnFixedBodyParts>
-			<li>Brain</li>
-		</appliedOnFixedBodyParts>
-        <addsHediff>SpeedImplant</addsHediff>
-    </RecipeDef>
-
-    <!--=======================================================================================-->
-
-    
 </Defs>

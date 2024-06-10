@@ -153,7 +153,7 @@
         <stages>
             <li>
                 <statOffsets>
-                    <ResearchSpeedFactor>+0.7</ResearchSpeedFactor>
+                    <SmoothingSpeed>0.7</SmoothingSpeed>
                 </statOffsets>
             </li>
         </stages>
@@ -208,6 +208,76 @@
         <addsHediff>SmithImplant</addsHediff>
     </RecipeDef>
 
+    <!--===================================================================================-->
+
+    <HediffDef ParentName="addedPartVOMImplant">
+        <defName>WorkerImplant</defName>
+        <label>Имплант рабочего</label>
+        <labelNoun>Имплант рабочего</labelNoun>
+        <description>REPLACE</description>
+        <descriptionHyperlinks>
+            <ThingDef>WorkerImplant</ThingDef>
+            <RecipeDef>WorkerImplant_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>WorkerImplant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="SurgeryVOMImplant">
+        <defName>WorkerImplant</defName>
+        <label>Имплант рабочего</label>
+        <description>REPLACE</description>
+        <descriptionHyperlinks>
+            <RecipeDef>WorkerImplant_install</RecipeDef>
+            <HediffDef>WorkerImplant</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+            <EPOE_MAAI_Chip>1</EPOE_MAAI_Chip>
+        </costList>
+        <statBases>
+            <WorkToMake>55000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallVOMImplantBase">
+        <defName>WorkerImplant_install</defName>
+        <label>Установить Имплант рабочего</label>
+        <description>Устанавливает Имплант рабочего</description>
+        <descriptionHyperlinks>
+            <ThingDef>WorkerImplant</ThingDef>
+            <HediffDef>WorkerImplant</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Имплант рабочего</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WorkerImplant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WorkerImplant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>WorkerImplant</addsHediff>
+    </RecipeDef>
+
 <!--===========================================================================-->
 
     <HediffDef ParentName="addedPartVOMImplant">
@@ -223,8 +293,8 @@
         <stages>
             <li>
                 <statOffsets>
-                    <MeleeWeapon_DamageMultiplier>-0.2</MeleeWeapon_DamageMultiplier>
-                    <MeleeWeapon_CooldownMultiplier>0.4</MeleeWeapon_CooldownMultiplier>
+                    <MeleeWeapon_DamageMultiplier>0.2</MeleeWeapon_DamageMultiplier>
+                    <MeleeWeapon_CooldownMultiplier>-0.2</MeleeWeapon_CooldownMultiplier>
                 </statOffsets>
             </li>
         </stages>
@@ -295,7 +365,7 @@
             <li>
                 <statOffsets>
                     <RangedCooldownFactor>-0.2</RangedCooldownFactor>
-                    <RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+                    <AimingDelayFactor>-0.2</AimingDelayFactor>
                 </statOffsets>
             </li>
         </stages>
@@ -426,7 +496,7 @@
     <!--+++++++++++++++++++++++++++++++ADVANCED++++++++++++++++++++++++++++++++++++-->
     <!--===========================================================================-->
 
-    <HediffDef ParentName="addedPartAdvancedVOMImplant">
+    <!-- <HediffDef ParentName="addedPartAdvancedVOMImplant">
         <defName>BladeImplant</defName>
         <label>Имплант клинка</label>
         <labelNoun>Имплант клинка</labelNoun>
@@ -507,6 +577,6 @@
 			<li>Arm</li>
 		</appliedOnFixedBodyParts>
         <addsHediff>BladeImplant</addsHediff>
-    </RecipeDef>
+    </RecipeDef> -->
 
 </Defs>

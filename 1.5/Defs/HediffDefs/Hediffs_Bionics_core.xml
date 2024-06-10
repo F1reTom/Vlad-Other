@@ -144,37 +144,47 @@
     <RecipeDef Name="SurgeryInstallBodyPartUltimaBase" ParentName="SurgeryInstallBodyPartProstheticBase" Abstract="True"></RecipeDef>
 
     <RecipeDef Name="SurgeryInstallVOMImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
-        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
-		<skillRequirements>
-			<Medicine>10</Medicine>
-		</skillRequirements>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>4</count>
-			</li>
-		</ingredients>
+      <deathOnFailedSurgeryChance>0.001</deathOnFailedSurgeryChance>
+	  <skillRequirements>
+	    <Medicine>10</Medicine>
+	  </skillRequirements>
+	  <ingredients>
+	    <li>
+	      <filter>
+	        <categories>
+	          <li>Medicine</li>
+	        </categories>
+	      </filter>
+	      <count>4</count>
+        </li>
+	  </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+      </fixedIngredientFilter>
     </RecipeDef>
 
     <RecipeDef Name="SurgeryInstallAdvancedVOMImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
-        <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
+        <deathOnFailedSurgeryChance>0.001</deathOnFailedSurgeryChance>
 		<skillRequirements>
 			<Medicine>12</Medicine>
 		</skillRequirements>
 		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Medicine</li>
-					</categories>
-				</filter>
-				<count>6</count>
-			</li>
+		  <li>
+		    <filter>
+			  <categories>
+				<li>Medicine</li>
+			  </categories>
+			</filter>
+			<count>6</count>
+		  </li>
 		</ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+      </fixedIngredientFilter>
     </RecipeDef>
 
 </Defs>

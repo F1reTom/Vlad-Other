@@ -85,7 +85,7 @@
         <defName>tech_AdvancedImplantSurgery</defName>
         <label>Продвинутое Имплантирование</label>
         <description>Открывает Продвинутое Имплантирование</description>
-        <baseCost>5000</baseCost>
+        <baseCost>6500</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>tech_ImplantSurgery</li>
@@ -104,7 +104,7 @@
         <baseCost>6500</baseCost>
         <techLevel>Spacer</techLevel>
         <prerequisites>
-            <li>tech_AdvancedImplantSurgery</li>
+            <li>tech_ImplantSurgery</li>
         </prerequisites>
         <tab>VOM</tab>
         <researchViewX>3</researchViewX>

@@ -5,7 +5,6 @@
         <label>Возбуждатель пси-чувствительности</label>
         <labelNoun>Возбуждатель пси-чувствительности</labelNoun>
         <description>Возбуждает пси-чувствительность.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLung</ThingDef></descriptionHyperlinks>
         <spawnThingOnRemoved>PsychicSensitivityImplant</spawnThingOnRemoved>
         <stages>
             <li>
@@ -145,7 +144,7 @@
         <costList>
             <PsychicSensitivityImplant>1</PsychicSensitivityImplant>
             <MeditationFocusGainImplant>1</MeditationFocusGainImplant>
-            <Gold>2.5</Gold>
+            <Gold>2</Gold>
 			<Plasteel>80</Plasteel>
 			<ComponentSpacer>10</ComponentSpacer>
             <VPE_Eltex>20</VPE_Eltex>

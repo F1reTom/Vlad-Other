@@ -6,7 +6,10 @@
         <label>ultimate bionic leg</label>
         <labelNoun>an ultimate bionic leg</labelNoun>
         <description>An installed ultimate bionic leg.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLeg</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicLeg</ThingDef>
+            <RecipeDef>UltimateBionicLeg_install</RecipeDef>
+        </descriptionHyperlinks>
         <spawnThingOnRemoved>UltimateBionicLeg</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
@@ -19,7 +22,10 @@
         <defName>UltimateBionicLeg</defName>
         <label>ultimate bionic leg</label>
         <description>The ultimate bionic leg. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><RecipeDef>UltimateBionicLeg_install</RecipeDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <RecipeDef>UltimateBionicLeg_install</RecipeDef>
+            <HediffDef>UltimateBionicLeg</HediffDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>50</Steel>
 			<Plasteel>30</Plasteel>
@@ -36,7 +42,10 @@
         <defName>UltimateBionicLeg_install</defName>
         <label>install ultimate bionic leg</label>
         <description>install an ultimate bionic leg</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLeg</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicLeg</ThingDef>
+            <HediffDef>UltimateBionicLeg</HediffDef>
+        </descriptionHyperlinks>
         <jobString>installing ultimate bionic leg</jobString>
         <ingredients>
             <li>
@@ -60,12 +69,15 @@
     </RecipeDef>
 <!--==============================================================================-->
     <HediffDef ParentName="addedPartUltimate">
-        <defName>UltimateBionicHand</defName>
-        <label>ultimate bionic hand</label>
-        <labelNoun>an ultimate bionic hand</labelNoun>
-        <description>An installed ultimate bionic hand.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicHand</ThingDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
+        <defName>UltimateBionicArm</defName>
+        <label>ultimate bionic Arm</label>
+        <labelNoun>an ultimate bionic Arm</labelNoun>
+        <description>An installed ultimate bionic Arm.</description>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicArm</ThingDef>
+            <RecipeDef>UltimateBionicArm_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>UltimateBionicArm</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.4</partEfficiency>
@@ -74,10 +86,13 @@
     </HediffDef>
 
     <ThingDef ParentName="BodyPartUltimateBionicBase">
-        <defName>UltimateBionicHand</defName>
-        <label>ultimate bionic hand</label>
-        <description>The ultimate bionic hand. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicHand</ThingDef></descriptionHyperlinks>
+        <defName>UltimateBionicArm</defName>
+        <label>ultimate bionic Arm</label>
+        <description>The ultimate bionic Arm. She is much better than her predecessors, she is beautiful, she is absolute</description>
+        <descriptionHyperlinks>
+            <HediffDef>UltimateBionicArm</HediffDef>
+            <RecipeDef>UltimateBionicArm_install</RecipeDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>50</Steel>
 			<Plasteel>30</Plasteel>
@@ -91,16 +106,19 @@
     </ThingDef>
 
     <RecipeDef ParentName="SurgeryInstallBodyPartUltimaBase">
-        <defName>UltimateBionicHand_install</defName>
-        <label>install ultimate bionic hand</label>
-        <description>install an ultimate bionic hand</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicHand</ThingDef></descriptionHyperlinks>
-        <jobString>installing ultimate bionic hand</jobString>
+        <defName>UltimateBionicArm_install</defName>
+        <label>install ultimate bionic Arm</label>
+        <description>install an ultimate bionic Arm</description>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicArm</ThingDef>
+            <HediffDef>UltimateBionicArm</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>installing ultimate bionic Arm</jobString>
         <ingredients>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>UltimateBionicHand</li>
+                        <li>UltimateBionicArm</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -108,13 +126,13 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>UltimateBionicHand</li>
+                <li>UltimateBionicArm</li>
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
-			<li>Hand</li>
+			<li>Arm</li>
 		</appliedOnFixedBodyParts>
-        <addsHediff>UltimateBionicHand</addsHediff>
+        <addsHediff>UltimateBionicArm</addsHediff>
     </RecipeDef>
 <!--==============================================================================-->
     <HediffDef ParentName="addedPartUltimate">
@@ -122,7 +140,10 @@
         <label>ultimate bionic eye</label>
         <labelNoun>an ultimate bionic eye</labelNoun>
         <description>An installed ultimate bionic eye.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicEye</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicEye</ThingDef>
+            <RecipeDef>UltimateBionicEye_install</RecipeDef>
+        </descriptionHyperlinks>
         <spawnThingOnRemoved>UltimateBionicEye</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
@@ -143,7 +164,10 @@
         <defName>UltimateBionicEye</defName>
         <label>ultimate bionic eye</label>
         <description>The ultimate bionic eye. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicEye</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <RecipeDef>UltimateBionicEye_install</RecipeDef>
+            <HediffDef>UltimateBionicEye</HediffDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>30</Steel>
 			<Plasteel>15</Plasteel>
@@ -160,7 +184,10 @@
         <defName>UltimateBionicEye_install</defName>
         <label>install ultimate bionic eye</label>
         <description>install an ultimate bionic eye</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicEye</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicEye</ThingDef>
+            <HediffDef>UltimateBionicEye</HediffDef>
+        </descriptionHyperlinks>
         <jobString>installing ultimate bionic eye</jobString>
         <ingredients>
             <li>
@@ -188,7 +215,10 @@
         <label>ultimate bionic spine</label>
         <labelNoun>an ultimate bionic spine</labelNoun>
         <description>An installed ultimate bionic spine.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicSpine</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicSpine</ThingDef>
+            <RecipeDef>UltimateBionicSpine_install</RecipeDef>
+        </descriptionHyperlinks>
         <spawnThingOnRemoved>UltimateBionicSpine</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
@@ -207,7 +237,10 @@
         <defName>UltimateBionicSpine</defName>
         <label>ultimate bionic spine</label>
         <description>The ultimate bionic spine. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicSpine</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <RecipeDef>UltimateBionicSpine_install</RecipeDef>
+            <HediffDef>UltimateBionicSpine</HediffDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>70</Steel>
 			<Plasteel>50</Plasteel>
@@ -224,7 +257,10 @@
         <defName>UltimateBionicSpine_install</defName>
         <label>install ultimate bionic spine</label>
         <description>install an ultimate bionic spine</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicSpine</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicSpine</ThingDef>
+            <HediffDef>UltimateBionicSpine</HediffDef>
+        </descriptionHyperlinks>
         <jobString>installing ultimate bionic spine</jobString>
         <ingredients>
             <li>
@@ -253,7 +289,10 @@
         <label>ultimate bionic ExoSuit</label>
         <labelNoun>an ultimate bionic ExoSuit</labelNoun>
         <description>An installed ultimate bionic ExoSuit.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicExoSuit</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicExoSuit</ThingDef>
+            <RecipeDef>UltimateBionicExoSuit_install</RecipeDef>
+        </descriptionHyperlinks>
         <spawnThingOnRemoved>UltimateBionicExoSuit</spawnThingOnRemoved>
         <tags>
             <li>ExoskeletonSuit</li>
@@ -285,7 +324,10 @@
         <defName>UltimateBionicExoSuit</defName>
         <label>ultimate bionic ExoSuit</label>
         <description>The ultimate bionic ExoSuit. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicExoSuit</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <HediffDef>UltimateBionicExoSuit</HediffDef>
+            <RecipeDef>UltimateBionicExoSuit_install</RecipeDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>100</Steel>
 			<Plasteel>60</Plasteel>
@@ -302,7 +344,10 @@
         <defName>UltimateBionicExoSuit_install</defName>
         <label>install ultimate bionic ExoSuit</label>
         <description>install an ultimate bionic ExoSuit</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicExoSuit</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <HediffDef>UltimateBionicExoSuit</HediffDef>
+            <RecipeDef>UltimateBionicExoSuit_install</RecipeDef>
+        </descriptionHyperlinks>
         <jobString>installing ultimate bionic ExoSuit</jobString>
         <ingredients>
             <li>
@@ -335,8 +380,11 @@
         <label>ultimate bionic heart</label>
         <labelNoun>an ultimate bionic heart</labelNoun>
         <description>An installed ultimate bionic Heart.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicHeart</ThingDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicHeart</ThingDef>
+            <RecipeDef>UltimateBionicHeart_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>UltimateBionicArm</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.4</partEfficiency>
@@ -348,7 +396,10 @@
         <defName>UltimateBionicHeart</defName>
         <label>ultimate bionic heart</label>
         <description>The ultimate bionic heart. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><RecipeDef>UltimateBionicHeart_install</RecipeDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <RecipeDef>UltimateBionicHeart_install</RecipeDef>
+            <HediffDef>UltimateBionicHeart</HediffDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>80</Steel>
 			<Plasteel>45</Plasteel>
@@ -365,7 +416,10 @@
         <defName>UltimateBionicHeart_install</defName>
         <label>install ultimate bionic heart</label>
         <description>install an ultimate bionic heart</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicHeart</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <HediffDef>UltimateBionicHeart</HediffDef>
+            <ThingDef>UltimateBionicHeart</ThingDef>
+        </descriptionHyperlinks>
         <jobString>installing ultimate bionic heart</jobString>
         <ingredients>
             <li>
@@ -393,8 +447,11 @@
         <label>ultimate bionic liver</label>
         <labelNoun>an ultimate bionic liver</labelNoun>
         <description>An installed ultimate bionic Liver.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLiver</ThingDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicLiver</ThingDef>
+            <RecipeDef>UltimateBionicLiver_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>UltimateBionicArm</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.4</partEfficiency>
@@ -406,7 +463,10 @@
         <defName>UltimateBionicLiver</defName>
         <label>ultimate bionic liver</label>
         <description>The ultimate bionic liver. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><RecipeDef>UltimateBionicLiver_install</RecipeDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <RecipeDef>UltimateBionicLiver_install</RecipeDef>
+            <HediffDef>UltimateBionicLiver</HediffDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>70</Steel>
 			<Plasteel>40</Plasteel>
@@ -423,7 +483,10 @@
         <defName>UltimateBionicLiver_install</defName>
         <label>install ultimate bionic liver</label>
         <description>install an ultimate bionic liver</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLiver</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <HediffDef>UltimateBionicLiver</HediffDef>
+            <ThingDef>UltimateBionicLiver</ThingDef>
+        </descriptionHyperlinks>
         <jobString>installing ultimate bionic liver</jobString>
         <ingredients>
             <li>
@@ -451,8 +514,11 @@
         <label>ultimate bionic lung</label>
         <labelNoun>an ultimate bionic lung</labelNoun>
         <description>An installed ultimate bionic lung.</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLung</ThingDef></descriptionHyperlinks>
-        <spawnThingOnRemoved>UltimateBionicHand</spawnThingOnRemoved>
+        <descriptionHyperlinks>
+            <ThingDef>UltimateBionicLung</ThingDef>
+            <RecipeDef>UltimateBionicLung_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>UltimateBionicArm</spawnThingOnRemoved>
         <addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.4</partEfficiency>
@@ -464,7 +530,10 @@
         <defName>UltimateBionicLung</defName>
         <label>ultimate bionic lung</label>
         <description>The ultimate bionic lung. She is much better than her predecessors, she is beautiful, she is absolute</description>
-        <descriptionHyperlinks><RecipeDef>UltimateBionicLung_install</RecipeDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <RecipeDef>UltimateBionicLung_install</RecipeDef>
+            <HediffDef>UltimateBionicLung</HediffDef>
+        </descriptionHyperlinks>
         <costList>
             <Steel>70</Steel>
 			<Plasteel>40</Plasteel>
@@ -481,7 +550,10 @@
         <defName>UltimateBionicLung_install</defName>
         <label>install ultimate bionic lung</label>
         <description>install an ultimate bionic lung</description>
-        <descriptionHyperlinks><ThingDef>UltimateBionicLung</ThingDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <HediffDef>UltimateBionicLung</HediffDef>
+            <ThingDef>UltimateBionicLung</ThingDef>
+        </descriptionHyperlinks>
         <jobString>installing ultimate bionic lung</jobString>
         <ingredients>
             <li>

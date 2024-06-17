@@ -77,7 +77,7 @@
             <li>tech_UltimateBionicExoSuit</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>3</researchViewY>
     </ResearchProjectDef>
 
@@ -91,7 +91,7 @@
             <li>tech_ImplantSurgery</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>2</researchViewY>
     </ResearchProjectDef>
 
@@ -107,7 +107,7 @@
             <li>tech_ImplantSurgery</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>4</researchViewY>
     </ResearchProjectDef>
 
@@ -121,7 +121,7 @@
             <li>tech_PSYAdvancedBrainSurgery</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>5</researchViewY>
     </ResearchProjectDef>
 
@@ -135,7 +135,35 @@
             <li>tech_PSYUltimateBrainSurgery</li>
         </prerequisites>
         <tab>VOM</tab>
-        <researchViewX>3</researchViewX>
+        <researchViewX>2</researchViewX>
         <researchViewY>6</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_NemesisBionic</defName>
+        <label>Пустотная Бионика</label>
+        <description>Открывает Пустотную Бионику</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_ImplantSurgery</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>3</researchViewX>
+        <researchViewY>3</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>tech_NemesisBionicOrgan</defName>
+        <label>Пустотная Бионика органов</label>
+        <description>Открывает Пустотную Бионику органов</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>tech_NemesisBionic</li>
+        </prerequisites>
+        <tab>VOM</tab>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3</researchViewY>
     </ResearchProjectDef>
 </Defs>

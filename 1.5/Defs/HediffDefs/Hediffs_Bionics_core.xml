@@ -4,9 +4,10 @@
     <ThingDef Name="BodyPartVladBionicBase" ParentName="BodyPartBionicBase" Abstract="True">
     <techLevel>Spacer</techLevel>
     <recipeMaker Inherit="False">
-         <skillRequirements>
+        <skillRequirements>
                 <Crafting>10</Crafting>
-            </skillRequirements>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
     </recipeMaker>
     </ThingDef>
 
@@ -20,6 +21,38 @@
                 <li>TableBionics</li>
             </recipeUsers>
             <researchPrerequisite>tech_UltimateBionic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="BodyPartNemesisBionicBase" ParentName="BodyPartVladBionicBase" Abstract="True">
+        <graphicData>
+            <texPath>Things/Item/BodyPart/NemesisBionic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>NemesisTable</li>
+            </recipeUsers>
+            <researchPrerequisite>tech_NemesisBionic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="BodyPartNemesisBionicOrganBase" ParentName="BodyPartVladBionicBase" Abstract="True">
+        <graphicData>
+            <texPath>Things/Item/BodyPart/NemesisBionic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <recipeUsers>
+                <li>NemesisTable</li>
+            </recipeUsers>
+            <researchPrerequisite>tech_NemesisBionicOrgan</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
 
@@ -35,8 +68,6 @@
             <researchPrerequisite>tech_UltimateBionicOrgan</researchPrerequisite>
         </recipeMaker>
     </ThingDef>
-
-    
 
     <ThingDef Name="BodyPartUltimateBionicSpineBase" ParentName="BodyPartVladBionicBase" Abstract="True">
         <graphicData>
@@ -139,9 +170,39 @@
         <defaultLabelColor>(0,255,127)</defaultLabelColor>
     </HediffDef>
 
+    <HediffDef Name="addedPartNemesis" ParentName="addedPartAdvanced" Abstract="True">
+        <defaultLabelColor>(255,69,0)</defaultLabelColor>
+    </HediffDef>
+
+    <HediffDef Name="addedPartNemesisOrgan" ParentName="addedPartNemesis" Abstract="True">
+    </HediffDef>
+
     <!--============================================================================================-->
 
-    <RecipeDef Name="SurgeryInstallBodyPartUltimaBase" ParentName="SurgeryInstallBodyPartProstheticBase" Abstract="True"></RecipeDef>
+    <RecipeDef Name="SurgeryInstallBodyPartUltimaBase" ParentName="SurgeryInstallBodyPartProstheticBase" Abstract="True">
+    </RecipeDef>
+
+    <RecipeDef Name="SurgeryInstallBodyPartNemesisBase" ParentName="SurgeryInstallBodyPartProstheticBase" Abstract="True">
+      <deathOnFailedSurgeryChance>0.001</deathOnFailedSurgeryChance>
+      <skillRequirements>
+        <Medicine>10</Medicine>
+      </skillRequirements>
+      <ingredients>
+        <li>
+          <filter>
+            <categories>
+              <li>Medicine</li>
+            </categories>
+          </filter>
+          <count>5</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <categories>
+          <li>Medicine</li>
+        </categories>
+      </fixedIngredientFilter>
+    </RecipeDef>
 
     <RecipeDef Name="SurgeryInstallVOMImplantBase" ParentName="SurgeryInstallImplantBase" Abstract="True">
       <deathOnFailedSurgeryChance>0.001</deathOnFailedSurgeryChance>

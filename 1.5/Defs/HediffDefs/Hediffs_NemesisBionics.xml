@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef ParentName="addedPartNemesis">
+        <defName>NemesisBionicLeg</defName>
+        <label>Пустотная бионическая нога</label>
+        <labelNoun>Пустотная бионическая нога</labelNoun>
+        <description>Установленная Пустотная бионическая нога.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicLeg</ThingDef>
+            <RecipeDef>NemesisBionicLeg_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicLeg</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicBase">
+        <defName>NemesisBionicLeg</defName>
+        <label>Пустотная бионическая нога</label>
+        <description>Пустотная бионическая нога. Она лучше своих предшествеников она абсолютна, она совершенна</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NemesisBionicLeg_install</RecipeDef>
+            <HediffDef>NemesisBionicLeg</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>100</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+            <UltimateBionicLeg>1</UltimateBionicLeg>
+        </costList>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicLeg_install</defName>
+        <label>Установить Пустотную бионическую ногу</label>
+        <description>Устанавливает Пустотную бионическую ногу</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicLeg</ThingDef>
+            <HediffDef>NemesisBionicLeg</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Пустотную бионическую ногу</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Leg</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicLeg</addsHediff>
+    </RecipeDef>
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartNemesis">
+        <defName>NemesisBionicArm</defName>
+        <label>Пустотная бионическая рука</label>
+        <labelNoun>Пустотная бионическая рука</labelNoun>
+        <description>Установленная Пустотная бионическая рука.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicArm</ThingDef>
+            <RecipeDef>NemesisBionicArm_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicArm</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicBase">
+        <defName>NemesisBionicArm</defName>
+        <label>Пустотная бионическая рука</label>
+        <description>Пустотная бионическая рука. Она лучше своих предшествеников она абсолютна, она совершенна</description>
+        <descriptionHyperlinks>
+            <HediffDef>NemesisBionicArm</HediffDef>
+            <RecipeDef>NemesisBionicArm_install</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>100</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+            <UltimateBionicArm>1</UltimateBionicArm>
+        </costList>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicArm_install</defName>
+        <label>Установить Пустотную бионическую руку</label>
+        <description>Устанавливает Пустотную бионическую руку</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicArm</ThingDef>
+            <HediffDef>NemesisBionicArm</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Пустотную бионическую руку</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Arm</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicArm</addsHediff>
+    </RecipeDef>
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartNemesis">
+        <defName>NemesisBionicEye</defName>
+        <label>Пустотный бионический глаз</label>
+        <labelNoun>Пустотный бионический глаз</labelNoun>
+        <description>Установленный Пустотный бионический глаз.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicEye</ThingDef>
+            <RecipeDef>NemesisBionicEye_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicEye</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <Beauty>+1</Beauty>
+                    <ShootingAccuracyPawn>+2</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicBase">
+        <defName>NemesisBionicEye</defName>
+        <label>Пустотный бионический глаз</label>
+        <description>Пустотный бионический глаз. Он лучше своих предшествеников он абсолютен, он совершенен</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NemesisBionicEye_install</RecipeDef>
+            <HediffDef>NemesisBionicEye</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>50</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+            <UltimateBionicEye>1</UltimateBionicEye>
+        </costList>
+        <statBases>
+            <WorkToMake>70000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicEye_install</defName>
+        <label>Установить Пустотный бионический глаз</label>
+        <description>Устанавливает Пустотный бионический глаз</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicEye</ThingDef>
+            <HediffDef>NemesisBionicEye</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Пустотный бионический глаз</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicEye</addsHediff>
+    </RecipeDef>
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartNemesis">
+        <defName>NemesisBionicSpine</defName>
+        <label>Пустотный бионический позвоночник</label>
+        <labelNoun>Пустотный бионический позвоночник</labelNoun>
+        <description>Установленный Пустотный бионический позвоночник.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicSpine</ThingDef>
+            <RecipeDef>NemesisBionicSpine_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicSpine</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicBase">
+        <defName>NemesisBionicSpine</defName>
+        <label>Пустотный бионический позвоночник</label>
+        <description>Пустотный бионический позвоночник. Он лучше своих предшествеников он абсолютен, он совершенен</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NemesisBionicSpine_install</RecipeDef>
+            <HediffDef>NemesisBionicSpine</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>100</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+            <UltimateBionicSpine>1</UltimateBionicSpine>
+        </costList>
+        <statBases>
+            <WorkToMake>75000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicSpine_install</defName>
+        <label>Установить Пустотный бионический позвоночник</label>
+        <description>Устанавливает Пустотный бионический позвоночник</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicSpine</ThingDef>
+            <HediffDef>NemesisBionicSpine</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Пустотный бионический позвоночник</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicSpine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicSpine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Spine</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicSpine</addsHediff>
+    </RecipeDef>
+    <!--==============================================================================-->
+    <HediffDef ParentName="addedPartNemesis">
+        <defName>NemesisBionicExoSuit</defName>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <label>Пустотный Экзо Костюм</label>
+        <labelNoun>Пустотный Экзо Костюм</labelNoun>
+        <description>Установленный Пустотный Экзо Костюм.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicExoSuit</ThingDef>
+            <RecipeDef>NemesisBionicExoSuit_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicExoSuit</spawnThingOnRemoved>
+        <tags>
+            <li>ExoskeletonSuit</li>
+        </tags>
+        <stages>
+            <li>
+                <statOffsets>
+                    <CarryingCapacity>+50</CarryingCapacity>
+                    <StuffPower_Armor_Sharp>+0.3</StuffPower_Armor_Sharp>
+                    <StuffPower_Armor_Blunt>+0.3</StuffPower_Armor_Blunt>
+                    <WorkSpeedGlobal>+0.3</WorkSpeedGlobal>
+                </statOffsets>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.40</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+			<li MayRequire="V1024.EBFramework" Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+				<scaleAdjustment>0.40</scaleAdjustment>
+			</li>
+		</comps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicBase">
+        <defName>NemesisBionicExoSuit</defName>
+        <label>Пустотный Экзо Костюм</label>
+        <description>Пустотный Экзо Костюм. Он лучше своих предшествеников он абсолютен, он совершенен</description>
+        <descriptionHyperlinks>
+            <HediffDef>NemesisBionicExoSuit</HediffDef>
+            <RecipeDef>NemesisBionicExoSuit_install</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>150</Steel>
+			<Plasteel>100</Plasteel>
+			<ComponentIndustrial>14</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
+            <UltimateBionicExoSuit>1</UltimateBionicExoSuit>
+        </costList>
+        <statBases>
+            <WorkToMake>85000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicExoSuit_install</defName>
+        <label>Установить Пустотный Экзо Костюм</label>
+        <description>Устанавливает Пустотный Экзо Костюм</description>
+        <descriptionHyperlinks>
+            <HediffDef>NemesisBionicExoSuit</HediffDef>
+            <RecipeDef>NemesisBionicExoSuit_install</RecipeDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Пустотный Экзо Костюм</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicExoSuit</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicExoSuit</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicExoSuit</addsHediff>
+        <incompatibleWithHediffTags>
+			<li>ExoskeletonSuit</li>
+		</incompatibleWithHediffTags>
+    </RecipeDef>
+
+<!--=================================ORGAN=======================================-->
+
+    <HediffDef ParentName="addedPartNemesisOrgan">
+        <defName>NemesisBionicHeart</defName>
+        <label>Пустотное бионическое сердце</label>
+        <labelNoun>Пустотное бионическое сердцеt</labelNoun>
+        <description>Установленное Пустотное бионическое сердце.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicHeart</ThingDef>
+            <RecipeDef>NemesisBionicHeart_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicHeart</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicOrganBase">
+        <defName>NemesisBionicHeart</defName>
+        <label>Пустотное бионическое сердце</label>
+        <description>Пустотное бионическое сердце. Оно лучше своих предшествеников оно абсолютно, оно совершенно</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NemesisBionicHeart_install</RecipeDef>
+            <HediffDef>NemesisBionicHeart</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>80</Steel>
+			<Plasteel>45</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>6</ComponentSpacer>
+            <Hyperweave>20</Hyperweave>
+            <UltimateBionicHeart>1</UltimateBionicHeart>
+        </costList>
+        <statBases>
+            <WorkToMake>80000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicHeart_install</defName>
+        <label>Установить Пустотное бионическое сердце</label>
+        <description>Установливает Пустотное бионическое сердце</description>
+        <descriptionHyperlinks>
+            <HediffDef>NemesisBionicHeart</HediffDef>
+            <ThingDef>NemesisBionicHeart</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Установливает Пустотное бионическое сердце</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicHeart</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicHeart</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Heart</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicHeart</addsHediff>
+    </RecipeDef>
+<!--==============================================================================-->
+    <HediffDef ParentName="addedPartNemesisOrgan">
+        <defName>NemesisBionicLiver</defName>
+        <label>Пустотная бионическая печень</label>
+        <labelNoun>Пустотная бионическая печень</labelNoun>
+        <description>Установленная Пустотная бионическая печень.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicLiver</ThingDef>
+            <RecipeDef>NemesisBionicLiver_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicLiver</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicOrganBase">
+        <defName>NemesisBionicLiver</defName>
+        <label>Пустотная бионическая печень</label>
+        <description>Пустотная бионическая печень. Она лучше своих предшествеников она абсолютна, она совершенна</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NemesisBionicLiver_install</RecipeDef>
+            <HediffDef>NemesisBionicLiver</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+            <Hyperweave>15</Hyperweave>
+            <UltimateBionicLiver>1</UltimateBionicLiver>
+        </costList>
+        <statBases>
+            <WorkToMake>80000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicLiver_install</defName>
+        <label>Установить Пустотную бионическую печень</label>
+        <description>Устанавливает Пустотную бионическую печень</description>
+        <descriptionHyperlinks>
+            <HediffDef>NemesisBionicLiver</HediffDef>
+            <ThingDef>NemesisBionicLiver</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Пустотную бионическую печень</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicLiver</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicLiver</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Liver</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicLiver</addsHediff>
+    </RecipeDef>
+    <!--==============================================================================-->
+    <HediffDef ParentName="addedPartNemesisOrgan">
+        <defName>NemesisBionicLung</defName>
+        <label>Пустотное бионическое лёгкое</label>
+        <labelNoun>Пустотное бионическое лёгкое</labelNoun>
+        <description>Установленное Пустотное бионическое лёгкое.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NemesisBionicLung</ThingDef>
+            <RecipeDef>NemesisBionicLung_install</RecipeDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>NemesisBionicLung</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartNemesisBionicOrganBase">
+        <defName>NemesisBionicLung</defName>
+        <label>Пустотное бионическое лёгкое</label>
+        <description>Пустотное бионическое лёгкое. Оно лучше своих предшествеников оно абсолютно, оно совершенно</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NemesisBionicLung_install</RecipeDef>
+            <HediffDef>NemesisBionicLung</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>40</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>8</ComponentSpacer>
+            <Hyperweave>15</Hyperweave>
+            <UltimateBionicLung>1</UltimateBionicLung>
+        </costList>
+        <statBases>
+            <WorkToMake>80000</WorkToMake>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNemesisBase">
+        <defName>NemesisBionicLung_install</defName>
+        <label>Установить Пустотное бионическое лёгкое</label>
+        <description>Устанавливает Пустотное бионическое лёгкое</description>
+        <descriptionHyperlinks>
+            <HediffDef>NemesisBionicLung</HediffDef>
+            <ThingDef>NemesisBionicLung</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Устанавливает Пустотное бионическое лёгкое</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NemesisBionicLung</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NemesisBionicLung</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+			<li>Lung</li>
+		</appliedOnFixedBodyParts>
+        <addsHediff>NemesisBionicLung</addsHediff>
+    </RecipeDef>
+</Defs>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
     <ResearchTabDef>
         <defName>VOM</defName>
@@ -130,7 +130,7 @@
         <label>Пустотная псионическая хирургия на мозге</label>
         <description>Открывает Пустотную псионическую хирургию на мозге</description>
         <baseCost>8000</baseCost>
-        <techLevel>Spacer</techLevel>
+        <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>tech_PSYUltimateBrainSurgery</li>
         </prerequisites>
@@ -144,7 +144,7 @@
         <label>Пустотная Бионика</label>
         <description>Открывает Пустотную Бионику</description>
         <baseCost>8000</baseCost>
-        <techLevel>Spacer</techLevel>
+        <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>tech_ImplantSurgery</li>
         </prerequisites>
@@ -158,7 +158,7 @@
         <label>Пустотная Бионика органов</label>
         <description>Открывает Пустотную Бионику органов</description>
         <baseCost>8000</baseCost>
-        <techLevel>Spacer</techLevel>
+        <techLevel>Ultra</techLevel>
         <prerequisites>
             <li>tech_NemesisBionic</li>
         </prerequisites>

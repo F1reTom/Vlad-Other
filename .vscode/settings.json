@@ -1,0 +1,9 @@
+{
+    "rwxml.paths.externalMods": [
+
+    ],
+    "rwxml.paths.localMods": "C:/Games/RimWorld/Mods",
+    "rwxml.paths.rimWorld": "C:/Games/RimWorld/",
+    "rwxml.paths.rimWorldData": "C:/Games/RimWorld/Data",
+    "rwxml.paths.rimWorldManaged": "C:/Games/RimWorld/RimWorldWin64_Data/Managed"
+}
